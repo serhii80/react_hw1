@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+}
+button {
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    margin-right: 2px;
+    border-radius: 5px;
+    color: #fb6600;
+    background: linear-gradient(180deg,#e0e0e0 0,#dbdbdb 33%,#cfcfcf 51%,#c7c7c7);
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.contaner {
+    display: flex;
+    justify-content: center;
+}
+.info_box {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+.top_info {
+    height: 330px;
+    overflow-y: hidden;
+}
+.bottom_info {
+    height: 25px;
+    padding: 10px 8px;
+}
+
+.image_here {
+    width: 100%;
+    height: 256px;
+}
+.text_here {
+    padding: 0 8px;
+    transition: margin-top .5s;
+    margin-top: 0px;
+}
+.caption {
+    font-size: 18px;
+    color: #fb6600;
+    font-weight: 700;
+}
+
+.toggle_button {
+    padding: 0 8px;
+    height: 21px;
+}
+.togg_but {
+    background: transparent;
+    border: none;
+    color: #fb6600;
+    text-align: left;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    transition: color .6s;
+    color: transparent;
+}
+p::first-line {
+    color: black;
+}
+.p_black {
+    transition: color 0s;
+    color: black;
+}
+.last_dot::after {
+    content: "...";
+}
+.last::after {
+    content: attr(lastchar);
+}
